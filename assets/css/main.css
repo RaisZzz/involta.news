@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a[class] {
+	text-decoration: none;
+}
+ul[class] {
+	list-style: none;
+}
+body {
+	font-family: Arial;
+	background-color: #FBFBFB;
+}
+.container {
+	width: 1060px;
+	margin: 0 auto;
+}
+/* Header */
+.header .container {
+	display: flex;
+	align-items: center;
+	padding: 36px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.title {
+	font-size: 36px;
+	font-weight: 700;
+	margin-right: 30px;
+}
+.refresh-btn {
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+	transition: 0.3s;
+}
+.refresh-icon {
+	width: 20px;
+	height: auto;
+}
+.refresh-icon path {
+	transition: 0.3s;
+}
+.refresh-btn:hover {
+	background: #0029FF;
+}
+.refresh-btn:hover path {
+	fill: #fff;
+}
+.search {
+	margin-left: auto;
+	position: relative;
+}
+.search-input {
+	min-width: 320px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px 40px 10px 10px;
+}
+.search-icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 20px;
+	height: auto;
+	transform: translateY(-50%);
+}
+/* News */
+.news {
+	padding: 25px 0;
+}
+.news-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+.news-container.photo {
+	grid-template-columns: 1fr;
+}
+.news-item {
+	padding: 30px 30px 5px 30px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.news-title {
+	color: #0029FF;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+.news-description {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.news-link {
+	color: #0029FF;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+.news-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.news-site {
+	color: #DCDCDC;
+	font-size: 14px;
+	font-weight: 400;
+}
+.news-date {
+	color: #DCDCDC;
+	font-size: 14px;
+	font-weight: 400;
+}
